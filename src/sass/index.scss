@@ -1,54 +1,60 @@
-.container{
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   //border: 1px solid #cccccc;
 }
 
-a, i{
+a, i {
   display: block;
 }
 
-.header{
+.header {
   padding: 14px 0;
   box-sizing: border-box;
   //border: 1px solid #cccccc;
-  .nuoda_logo{
+  .nuoda_logo {
     width: 180px;
     height: 60px;
     background: url("../images/logo/nuoda_logo.png") no-repeat;
     float: left;
     margin-right: 12px;
   }
-  .uws_logo{
+  .uws_logo {
     width: 208px;
     height: 44px;
     background: url("../images/logo/uws_logo.jpg") no-repeat;
     float: left;
     margin-top: 8px;
   }
-  .nav{
+  .nav {
     float: left;
     margin-top: 19px;
-    .nav-item{
+    .nav-item {
       float: left;
       color: #333333;
       font-size: 16px;
       border-right: 1px dotted #333333;
       padding: 0 24px;
       box-sizing: border-box;
+      &:last-child{
+        border-right: 0;
+      }
+      &:hover {
+        color: #eb4d4d;
+      }
     }
   }
-  .tel{
+  .tel {
     float: right;
     margin-top: 14px;
-    .icon{
+    .icon {
       width: 32px;
       height: 30px;
       background: url("../images/icon/tel.png") no-repeat;
       float: left;
     }
-    .tel-text{
+    .tel-text {
       color: #f05630;
       font-size: 24px;
       float: left;
@@ -56,68 +62,53 @@ a, i{
   }
 }
 
-.banner{
+.banner {
   width: 100%;
   height: 428px;
   background: url("../images/bg/banner.png") no-repeat;
-  padding: 80px 0;
+  padding: 90px 0;
   box-sizing: border-box;
   text-align: center;
   color: #FFFFFF;
-  .banner-h1{
-    font-size: 60px;
-    font-weight: bold;
-  }
-  .en-title{
-    font-size: 16px;
-    width: 34%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .mba{
-    font-size: 40px;
-    padding: 0 46px;
-    box-sizing: border-box;
-  }
-  .btn{
+  .btn {
     font-size: 18px;
-    margin-top: 30px;
-    .btn-item{
-      padding: 0 46px;
+    margin-top: 214px;
+    .btn-item {
+      padding: 0 72px;
       box-sizing: border-box;
       color: #FFFFFF;
-      background: url("../images/icon/icon2.png");
       text-align: center;
       border-radius: 5px;
       line-height: 43px;
       display: inline-block;
-      box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2);
-      &:nth-of-type(2){
-        background: url("../images/icon/icon3.png");
+      //border: 1px solid #000;
+      text-indent: -9999px;
+      &:nth-of-type(2) {
         margin-left: 30px;
+        margin-right: -20px;
       }
     }
   }
 }
 
 /*英国西苏格兰大学*/
-.uws{
-  .container{
+.uws {
+  .container {
     padding: 48px 28px;
     box-sizing: border-box;
   }
-  .uws-detail{
+  .uws-detail {
     float: left;
     max-width: 538px;
-    .uws-bg{
+    .uws-bg {
       width: 538px;
       height: 240px;
       background: url("../images/bg/bg1.png") no-repeat;
       margin-bottom: 20px;
     }
-    .uws-head{
+    .uws-head {
       text-align: center;
-      .line{
+      .line {
         width: 6px;
         height: 34px;
         background-image: linear-gradient(to bottom, #FFFFFF, #ff653e 20%);
@@ -125,19 +116,19 @@ a, i{
         float: left;
         margin-top: 6px;
       }
-      .uws-logo{
+      .uws-logo {
         width: 182px;
         height: 40px;
         background: url("../images/icon/uws.png") no-repeat;
         float: left;
       }
-      .uws-title{
+      .uws-title {
         font-size: 22px;
         font-weight: bold;
         float: left;
         line-height: 38px;
       }
-      .text{
+      .text {
         font-size: 14px;
         color: #555555;
         clear: both;
@@ -146,7 +137,7 @@ a, i{
         box-sizing: border-box;
         text-align: left;
       }
-      .uws-btn{
+      .uws-btn {
         padding: 0 14px;
         box-sizing: border-box;
         background: url("../images/icon/icon2.png");
@@ -154,10 +145,10 @@ a, i{
         color: #FFFFFF;
         line-height: 36px;
         display: inline-block;
-        span{
+        span {
           display: inline-block;
         }
-        .icon{
+        .icon {
           width: 18px;
           height: 14px;
           background: url("../images/icon/arrows.png") no-repeat;
@@ -167,18 +158,16 @@ a, i{
     }
   }
   /*荣誉*/
-  .honor{
+  .honor {
     width: 580px;
-    height: 438px;
     //border: 1px solid #cccccc;
     float: right;
-    .honor-row{
+    .honor-row {
       width: 100%;
       //border: 1px solid #cccccc;
-      .num{
+      .num {
         display: block;
         width: 30px;
-        //height: 138px; // 动态高度
         background: url("../images/icon/circle.png") no-repeat;
         text-align: center;
         line-height: 30px;
@@ -186,7 +175,7 @@ a, i{
         font-size: 14px;
         position: relative;
         float: left;
-        &:before{
+        &:before {
           display: block;
           content: "";
           border-left: 1px dotted #626262;
@@ -196,31 +185,44 @@ a, i{
           left: 50%;
         }
       }
-      .detail{
+      .detail {
         width: 92%;
         //border: 1px solid #000;
         float: right;
         padding: 15px;
         box-sizing: border-box;
-        .honor-title{
+        .honor-title {
           font-size: 18px;
           font-weight: bold;
           color: #444444;
         }
-        .text{
+
+        .text {
+          .icon {
+            width: 5px;
+            height: 5px;
+            background: url("../images/icon/circle_black.png") no-repeat;
+            float: left;
+            margin-top: 12px;
+            margin-right: 6px;
+          }
           font-size: 14px;
           color: #666666;
           line-height: 28px;
+          span {
+            float: left;
+            width: 96%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box; //将对象作为弹性伸缩盒子模型显示。
+            -webkit-box-orient: vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+            -webkit-line-clamp: 3; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
+          }
 
-          overflow: hidden;
-          text-overflow:ellipsis;
-          display:-webkit-box; //将对象作为弹性伸缩盒子模型显示。
-          -webkit-box-orient:vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
-          -webkit-line-clamp:3; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
         }
-        &:hover{
+        &:hover {
           background: #f4f4f4;
-          .honor-title{
+          .honor-title {
             color: #3069ce;
           }
         }
@@ -230,33 +232,34 @@ a, i{
 }
 
 /*项目*/
-.project{
+.project {
   padding: 36px 0;
   box-sizing: border-box;
   background: #eceff6;
+  margin-bottom: 58px;
   /*简介*/
-  .intro{
+  .intro {
     width: 408px;
-    height: 573px;
+    //height: 573px;
     background: url("../images/bg/bg2.png") no-repeat;
     padding: 45px 28px;
     box-sizing: border-box;
     color: #FFFFFF;
     float: left;
-    .intro-title{
+    .intro-title {
       background: url("../images/icon/icon4.png") no-repeat;
       border-radius: 5px;
       padding: 10px 0 10px 20px;
       box-sizing: border-box;
 
-      .en{
+      .en {
         font-size: 26px;
         line-height: 30px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-      .ch{
+      .ch {
         font-size: 32px;
         line-height: 36px;
         font-weight: bold;
@@ -265,7 +268,7 @@ a, i{
         white-space: nowrap;
       }
     }
-    .intro-detail{
+    .intro-detail {
       min-height: 360px;
       padding: 30px;
       box-sizing: border-box;
@@ -275,16 +278,16 @@ a, i{
       margin-top: 42px;
       line-height: 30px;
       text-align: center;
-      .text{
+      .text {
         text-align: left;
 
         overflow: hidden;
-        text-overflow:ellipsis;
-        display:-webkit-box; //将对象作为弹性伸缩盒子模型显示。
-        -webkit-box-orient:vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
-        -webkit-line-clamp:9; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
+        text-overflow: ellipsis;
+        display: -webkit-box; //将对象作为弹性伸缩盒子模型显示。
+        -webkit-box-orient: vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+        -webkit-line-clamp: 9; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
       }
-      .intro-btn{
+      .intro-btn {
         color: #ff714b;
         border: 1px solid #ff714b;
         padding: 0 16px;
@@ -292,44 +295,49 @@ a, i{
         line-height: 32px;
         display: inline-block;
         margin-top: 10px;
-        &:hover{
+        &:hover {
           background: #ff714b;
           color: #FFFFFF;
         }
       }
     }
   }
-  .classes{
+  .classes {
     width: 379px;
     float: left;
-    .classes-content{
+    .classes-content {
       padding: 16px 24px;
       box-sizing: border-box;
       text-align: center;
       background: #FFFFFF;
-      .classes-row{
-        .icon{
-          width: 5px;
-          height: 5px;
-          background: url("../images/icon/circle-small.png") no-repeat;
-          float: left;
-          margin-top: 12px;
-          margin-right: 10px;
-        }
-        span{
-          width: 94%;
-          line-height: 32px;
-          font-size: 14px;
-          color: #555555;
-          float: left;
-          text-align: left;
+      .classes-ul {
+        height: 160px;
+        overflow: hidden;
+        .classes-row {
+          .icon {
+            width: 5px;
+            height: 5px;
+            background: url("../images/icon/circle-blue.png") no-repeat;
+            float: left;
+            margin-top: 12px;
+            margin-right: 10px;
+          }
+          span {
+            width: 94%;
+            line-height: 32px;
+            font-size: 14px;
+            color: #555555;
+            float: left;
+            text-align: left;
 
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
         }
       }
-      .intro-btn{
+
+      .intro-btn {
         color: #ff714b;
         border: 1px solid #ff714b;
         padding: 0 16px;
@@ -337,29 +345,29 @@ a, i{
         line-height: 32px;
         display: inline-block;
         margin-top: 10px;
-        font-size: 16px;
-        &:hover{
+        font-size: 14px;
+        &:hover {
           background: #ff714b;
           color: #FFFFFF;
         }
       }
     }
-    .classes-bg{
+    .classes-bg {
       width: 379px;
       height: 366px;
       background: url("../images/bg/bg3.png") no-repeat;
     }
   }
   /*伦敦考试委员会*/
-  .leb{
+  .leb {
     width: 413px;
     float: right;
-    .leb-bg{
+    .leb-bg {
       width: 413px;
       height: 238px;
       background: url("../images/bg/bg4.png") no-repeat;
     }
-    .leb-detail{
+    .leb-detail {
       max-height: 336px;
       overflow-y: hidden;
       color: #555555;
@@ -367,18 +375,18 @@ a, i{
       padding: 24px;
       box-sizing: border-box;
       text-align: center;
-      .text{
+      .text {
         font-size: 14px;
         text-align: left;
         line-height: 28px;
 
         overflow: hidden;
-        text-overflow:ellipsis;
-        display:-webkit-box; //将对象作为弹性伸缩盒子模型显示。
-        -webkit-box-orient:vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
-        -webkit-line-clamp:9; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
+        text-overflow: ellipsis;
+        display: -webkit-box; //将对象作为弹性伸缩盒子模型显示。
+        -webkit-box-orient: vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+        -webkit-line-clamp: 9; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
       }
-      .intro-btn{
+      .intro-btn {
         color: #ff714b;
         border: 1px solid #ff714b;
         padding: 0 16px;
@@ -386,7 +394,7 @@ a, i{
         line-height: 32px;
         display: inline-block;
         margin-top: 10px;
-        &:hover{
+        &:hover {
           background: #ff714b;
           color: #FFFFFF;
         }
@@ -396,26 +404,33 @@ a, i{
 }
 
 /*课程设置*/
-.curriculum{
-  margin-top: 80px;
-  margin-bottom: 26px;
-  .classes-set{
+.curriculum {
+  height: 226px;
+  .container {
+    position: absolute;
+    height: 226px;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .classes-set {
     width: 300px;
-    float: left;
-    .intro-title{
+    position: absolute;
+    left: 0;
+    .intro-title {
       background: url("../images/icon/icon5.png") no-repeat;
       border-radius: 5px;
       padding-left: 5px;
       box-sizing: border-box;
       color: #2c56bd;
-      .en{
+      .en {
         font-size: 26px;
         line-height: 30px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
       }
-      .ch{
+      .ch {
         font-size: 32px;
         line-height: 36px;
         font-weight: bold;
@@ -424,64 +439,67 @@ a, i{
         white-space: nowrap;
       }
     }
-    .text{
+    .text {
       font-size: 14px;
       text-align: left;
       line-height: 28px;
 
       overflow: hidden;
-      text-overflow:ellipsis;
-      display:-webkit-box; //将对象作为弹性伸缩盒子模型显示。
-      -webkit-box-orient:vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
-      -webkit-line-clamp:9; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
+      text-overflow: ellipsis;
+      display: -webkit-box; //将对象作为弹性伸缩盒子模型显示。
+      -webkit-box-orient: vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+      -webkit-line-clamp: 5; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
 
       margin-top: 20px;
     }
   }
-  .modules{
-    float: left;
-    .module-item{
+  .modules {
+    position: absolute;
+    right: 0;
+    .module-item {
       width: 245px;
-      height: 166px;
+      height: 178px;
       overflow: hidden;
-      background: url("../images/bg/bg5.png") no-repeat;
+      background: url("../images/bg/bg5.png") no-repeat #FFFFFF;
       border: 1px solid #2c56bd;
       float: left;
       margin-left: 10px;
-      padding: 20px 16px;
+      padding: 16px;
       font-size: 14px;
       position: relative;
-      .item-title{
+      .item-title {
         font-size: 20px;
         font-weight: bold;
         color: #444444;
       }
-      .line{
+      .line {
         display: block;
         width: 44px;
         height: 2px;
         background: #2c56bd;
         margin: 6px 0;
       }
-      .en{
+      .en {
         font-size: 14px;
         color: #999999;
       }
-      .admin{
+      .admin {
         width: 100%;
         height: 76px;
         overflow: hidden;
         float: left;
-        .classes-row{
-          .icon{
+        background: url("../images/icon/shadow.png") no-repeat;
+        //border: 1px solid #000;
+        .classes-row {
+          .icon {
             width: 5px;
             height: 5px;
-            background: url("../images/icon/circle-small.png") no-repeat;
+            background: url("../images/icon/circle-blue.png") no-repeat;
             float: left;
             margin-top: 12px;
             margin-right: 10px;
           }
-          span{
+          span {
             width: 93%;
             line-height: 26px;
             color: #555555;
@@ -491,27 +509,27 @@ a, i{
         }
       }
 
-      .intro-btn{
-        width: 89%;
+      .intro-btn {
+        width: 246px;
         //height: 32px;
         background: #2c56bd;
         color: #FFFFFF;
         padding: 0 16px;
         box-sizing: border-box;
-        line-height: 32px;
-        margin-top: 10px;
+        line-height: 42px;
         text-align: center;
         position: absolute;
-        bottom: 20px;
+        bottom: 16px;
+        box-shadow:0 -12px 80px 0px #FFFFFFFF;
       }
-      &:hover{
+      &:hover {
         height: auto;
-        .admin{
+        .admin {
           overflow: visible;
           height: auto;
-          margin-bottom: 30px;
+          margin-bottom: 50px;
         }
-        .item-title{
+        .item-title {
           color: #2c56bd;
         }
       }
@@ -520,15 +538,16 @@ a, i{
 }
 
 /*模块简介*/
-.module-intro{
+.module-intro {
+  margin-top: 25px;
   background: url("../images/bg/bg6.png") no-repeat;
   background-position-y: 57px;
   /*管理*/
-  .manage{
+  .manage {
     //border: 1px solid #000;
     background: url("../images/bg/bg7.png") no-repeat center;
-    .manage-head{
-      span{
+    .manage-head {
+      span {
         display: inline-block;
         font-size: 30px;
         color: #FFFFFF;
@@ -541,61 +560,47 @@ a, i{
         border-bottom-right-radius: 20px;
       }
     }
-    .manage-col{
-      width: 470px;
+    .manage-col {
+      width: 448px;
       //height: 710px;
       //border: 1px solid #cccccc;
       float: left;
       margin-top: 57px;
       padding: 34px 28px;
       box-sizing: border-box;
-      &:nth-child(3){
-        float: right;
-        .col-item{
-          .item-title{
-            .icon{
-              float: right;
-              margin-left: 6px;
-            }
-            .title-name{
-              float: right;
-            }
-          }
-          .text{
-            p{
-              text-align: right;
-            }
-          }
-        }
-      }
-      .col-item{
+
+      .col-item {
         //border: 1px solid #000;
         margin-bottom: 50px;
-        .item-title{
+        .item-title {
           margin-bottom: 5px;
-          .icon{
+          .icon {
+            width: 68px;
+            height: 50px;
+            //border: 1px solid #000;
             float: left;
-            background: url("../images/icon/icon3.png");
-            padding: 0 16px;
+            background: url("../images/icon/num1.png") no-repeat;
+            //padding: 0 16px;
             font-style: normal;
             font-size: 30px;
             color: #FFFFFF;
             line-height: 44px;
-            border-top-right-radius: 22px;
-            border-bottom-right-radius: 22px;
-            border-bottom-left-radius: 22px;
+            //border-top-right-radius: 22px;
+            //border-bottom-right-radius: 22px;
+            //border-bottom-left-radius: 22px;
             margin-right: 6px;
+            text-indent: -9999px;
           }
-          .title-name{
+          .title-name {
             font-size: 24px;
             line-height: 44px;
-            em{
+            em {
               color: #2c56bd;
             }
           }
         }
-        .text{
-          .icon{
+        .text {
+          .icon {
             width: 6px;
             height: 8px;
             background: url("../images/icon/triangle.png") no-repeat;
@@ -603,7 +608,7 @@ a, i{
             margin-top: 8px;
             margin-right: 6px;
           }
-          p{
+          p {
             font-size: 14px;
             color: #666666;
             float: left;
@@ -611,22 +616,89 @@ a, i{
             line-height: 24px;
           }
         }
-        &:last-child{
+        &:nth-child(2){
+          .item-title{
+            .icon{
+              background: url("../images/icon/num2.png") no-repeat;
+            }
+          }
+        }
+        &:nth-child(3){
+          .item-title{
+            .icon{
+              background: url("../images/icon/num3.png") no-repeat;
+            }
+          }
+        }
+        &:nth-child(4){
+          .item-title{
+            .icon{
+              background: url("../images/icon/num4.png") no-repeat;
+            }
+          }
+        }
+        &:last-child {
           margin-bottom: 34px;
+        }
+      }
+      &:last-child {
+        width: 440px;
+        float: right;
+        .col-item {
+          .item-title {
+            .icon {
+              float: right;
+              margin-left: 6px;
+            }
+            .title-name {
+              float: right;
+            }
+          }
+          .item-title{
+            .icon{
+              background: url("../images/icon/num5.png") no-repeat;
+            }
+          }
+          .text {
+            p {
+              text-align: right;
+            }
+          }
+          &:nth-child(2){
+            .item-title{
+              .icon{
+                background: url("../images/icon/num6.png") no-repeat;
+              }
+            }
+          }
+          &:nth-child(3){
+            .item-title{
+              .icon{
+                background: url("../images/icon/num7.png") no-repeat;
+              }
+            }
+          }
+          &:nth-child(4){
+            .item-title{
+              .icon{
+                background: url("../images/icon/num8.png") no-repeat;
+              }
+            }
+          }
         }
       }
     }
   }
   /*预约*/
-  .appoint{
+  .appoint {
     width: 1200px;
     height: 160px;
     background: url("../images/bg/bg8.png") no-repeat;
     padding: 55px 45px;
     box-sizing: border-box;
-    .appoint-from{
+    .appoint-from {
       float: right;
-      .from-item{
+      .from-item {
         line-height: 54px;
         padding: 0 24px;
         box-sizing: border-box;
@@ -635,10 +707,10 @@ a, i{
         margin-left: 28px;
         font-size: 16px;
         border-radius: 6px;
-        &::placeholder{
+        &::placeholder {
           color: #888888;
         }
-        &:last-child{
+        &:last-child {
           padding: 0 80px;
           box-sizing: border-box;
           font-size: 20px;
@@ -653,72 +725,78 @@ a, i{
 }
 
 /*项目优势*/
-.pro-advantage{
+.pro-advantage {
   text-align: center;
   margin-top: 34px;
-  .adv-title{
+  .adv-title {
     color: #2c56bd;
-    .en{
+    .en {
       font-size: 28px;
       background: url("../images/icon/icon6.png") no-repeat center;
       padding-top: 46px;
     }
-    .cn{
+    .cn {
       font-size: 32px;
       font-weight: bold;
     }
   }
 
-  .content{
+  .content {
     margin-top: 48px;
     margin-bottom: 32px;
-    .adv-item{
+    .adv-item {
       width: 380px;
       height: 410px;
-      border: 1px solid #cccccc;
+      //border: 1px solid #cccccc;
       float: left;
       margin-right: 25px;
       padding: 20px;
       box-sizing: border-box;
-
-      .item-bg{
+      box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+      .item-bg {
         width: 340px;
         height: 180px;
         background: url("../images/icon/icon7.png") no-repeat;
       }
-      .item-title{
+      .item-title {
         color: #444444;
         font-weight: bold;
         font-size: 20px;
         line-height: 26px;
         margin: 10px 0;
       }
-      .text{
+      .text {
         text-align: left;
         font-size: 14px;
         color: #555555;
         line-height: 28px;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box; //将对象作为弹性伸缩盒子模型显示。
+        -webkit-box-orient: vertical; //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式）
+        -webkit-line-clamp: 5; //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。
       }
 
-      &:nth-of-type(2){
-        .item-bg{
+      &:nth-of-type(2) {
+        .item-bg {
           background: url("../images/icon/icon8.png") no-repeat;
         }
       }
-      &:nth-of-type(3){
-        .item-bg{
+      &:nth-of-type(3) {
+        .item-bg {
           background: url("../images/icon/icon9.png") no-repeat;
         }
       }
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
   }
-  .btn{
+  .btn {
     font-size: 18px;
     margin-top: 30px;
-    .btn-item{
+    .btn-item {
       padding: 0 46px;
       box-sizing: border-box;
       color: #FFFFFF;
@@ -728,7 +806,7 @@ a, i{
       line-height: 43px;
       display: inline-block;
       box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2);
-      &:nth-of-type(2){
+      &:nth-of-type(2) {
         background: url("../images/icon/icon3.png");
         margin-left: 30px;
       }
@@ -737,22 +815,569 @@ a, i{
 }
 
 /*如何申请*/
-.apply{
-  text-align: center;
+.apply {
   margin-top: 50px;
-  height: 665px;
   background: url("../images/bg/bg9.png") no-repeat center right;
   background-position-y: 42px;
-  .adv-title{
+  .adv-title {
     color: #2c56bd;
-    .en{
+    margin-bottom: 34px;
+    text-align: center;
+    .en {
       font-size: 28px;
       background: url("../images/icon/icon6.png") no-repeat center;
       padding-top: 46px;
     }
-    .cn{
+    .cn {
       font-size: 32px;
       font-weight: bold;
+    }
+  }
+  /*条件*/
+  .condition {
+    width: 402px;
+    //height: 415px;
+    background: url("../images/bg/bg10.png");
+    float: left;
+    padding: 0 24px 0 40px;
+    box-sizing: border-box;
+    .condition-item {
+      border-bottom: 1px solid #6e8acb;
+      padding: 18px 0;
+      box-sizing: border-box;
+      .num-icon {
+        float: left;
+        background: url("../images/icon/icon2.png");
+        padding: 0 16px;
+        font-style: normal;
+        font-size: 30px;
+        color: #FFFFFF;
+        line-height: 44px;
+        border-top-right-radius: 22px;
+        border-bottom-right-radius: 22px;
+        border-bottom-left-radius: 22px;
+        margin-right: 6px;
+        margin-left: -74px;
+      }
+      .text {
+        color: #FFFFFF;
+        .text-title {
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 44px;
+        }
+        .classes-row {
+          .icon {
+            width: 5px;
+            height: 5px;
+            background: url("../images/icon/circle_white.png") no-repeat;
+            float: left;
+            margin-top: 12px;
+            margin-right: 10px;
+          }
+          span {
+            width: 92%;
+            line-height: 25px;
+            font-size: 14px;
+            color: #FFFFFF;
+            float: left;
+            text-align: left;
+          }
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  /*流程*/
+  .process {
+    width: 760px;
+    height: 415px;
+    background: url("../images/bg/bg11.png") no-repeat;
+    float: right;
+    padding: 18px;
+    box-sizing: border-box;
+    .num-icon {
+      float: left;
+      background: url("../images/icon/icon2.png");
+      padding: 0 16px;
+      font-style: normal;
+      font-size: 30px;
+      color: #FFFFFF;
+      line-height: 44px;
+      border-top-right-radius: 22px;
+      border-bottom-right-radius: 22px;
+      border-bottom-left-radius: 22px;
+      margin-right: 6px;
+      margin-left: -50px;
+    }
+    .text-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #FFFFFF;
+      line-height: 44px;
+    }
+
+    .content {
+      .process-item {
+        width: 157px;
+        min-height: 262px;
+        background: #FFFFFF;
+        text-align: center;
+        float: left;
+        margin-left: 25px;
+        border-radius: 2px;
+        .item-bg {
+          width: 157px;
+          height: 115px;
+          background: url("../images/icon/step_1.png") no-repeat;
+        }
+        .item-title {
+          font-size: 16px;
+          font-weight: bold;
+          color: #444444;
+        }
+        .text {
+          font-size: 14px;
+          color: #666666;
+          padding: 12px;
+          box-sizing: border-box;
+          line-height: 26px;
+        }
+        &:nth-of-type(1) {
+          margin-left: 16px;
+        }
+        &:nth-of-type(2) {
+          .item-bg {
+            background: url("../images/icon/step_2.png") no-repeat;
+          }
+        }
+        &:nth-of-type(3) {
+          .item-bg {
+            background: url("../images/icon/step_3.png") no-repeat;
+          }
+        }
+        &:nth-of-type(4) {
+          .item-bg {
+            background: url("../images/icon/step_4.png") no-repeat;
+          }
+        }
+      }
+    }
+
+    /*.btn {
+      font-size: 18px;
+      margin-top: 20px;
+      text-align: center;
+      .btn-item {
+        padding: 0 46px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        background: url("../images/icon/icon2.png");
+        text-align: center;
+        border-radius: 5px;
+        line-height: 43px;
+        display: inline-block;
+        box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2);
+        &:nth-of-type(2) {
+          background: url("../images/icon/icon3.png");
+          margin-left: 30px;
+        }
+      }
+    }*/
+
+    .btn {
+      font-size: 18px;
+      margin-top: 20px;
+      //border: 1px solid red;
+      text-align: center;
+      .btn-item {
+        padding: 0 72px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        text-align: center;
+        border-radius: 5px;
+        line-height: 43px;
+        display: inline-block;
+        //border: 1px solid #000;
+        text-indent: -9999px;
+        &:nth-of-type(2) {
+          margin-left: 25px;
+          margin-right: 2px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  margin-top: 38px;
+  background: #f6f6f6;
+  font-size: 12px;
+  padding: 22px 0;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 16px;
+  .footer-nav {
+    .nav-item {
+      display: inline-block;
+      color: #444444;
+      border-right: 1px solid #cccccc;
+      padding: 0 15px;
+      box-sizing: border-box;
+      &:hover {
+        color: #eb4d4d;
+      }
+    }
+  }
+  .address {
+    color: #666666;
+    margin-top: 18px;
+  }
+}
+
+/*广告*/
+.ad {
+  background: url("../images/bg/ad_1.png") no-repeat;
+  //border: 1px solid #000;
+  .container {
+    height: 99px;
+    background: url("../images/bg/ad_2.png") no-repeat;
+  }
+  .free-get {
+    //border: 1px solid #000;
+    float: right;
+    margin-top: 25px;
+    font-size: 16px;
+    .tel {
+      float: left;
+      width: 242px;
+      height: 40px;
+      background: #FFFFFF;
+      margin-right: 10px;
+      outline: 0;
+      padding-left: 18px;
+      padding-right: 18px;
+      box-sizing: border-box;
+      &::placeholder {
+        color: #999999;
+      }
+    }
+    .get-result {
+      float: left;
+      height: 40px;
+      background: url("../images/icon/icon2.png");
+      border-radius: 2px;
+      color: #FFFFFF;
+      cursor: pointer;
+      padding: 0 50px;
+      box-sizing: border-box;
+      border: none;
+      outline: none;
+      font-weight: bold;
+    }
+  }
+  .close {
+    width: 25px;
+    height: 25px;
+    background: url("../images/icon/colse.png") no-repeat;
+    float: right;
+    margin-top: -25px;
+    margin-left: 26px;
+    cursor: pointer;
+
+  }
+}
+
+/*右侧导航*/
+.right-nav {
+  width: 124px;
+  height: 417px;
+  //border: 1px solid #cccccc;
+  position: fixed;
+  top: 25%;
+  right: 10px;
+  margin: auto;
+  background: #df4839;
+  font-size: 14px;
+  text-align: center;
+  background: url("../images/icon/icon2.png");
+  .close {
+    width: 8px;
+    height: 8px;
+    background: url("../images/icon/close_2.png") no-repeat;
+    //border: 1px solid #000;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+  }
+  .nav {
+    width: 100%;
+    //height: 140px;
+    position: absolute;
+    top: 20px;
+    //border: 1px solid #000;
+    .nav-item {
+      color: #FFFFFF;
+      border-bottom: 1px solid #c83819;
+      line-height: 30px;
+      display: inline;
+      padding: 6px;
+      box-sizing: border-box;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  .online-consult {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    background: #3161d2;
+    color: #FFFFFF;
+    position: absolute;
+    top: 210px;
+    left: 22px;
+    border-radius: 15px;
+  }
+
+  .wechart {
+    width: 99px;
+    height: 99px;
+    background: url("../images/icon/wechart.png") no-repeat;
+    position: absolute;
+    top: 254px;
+    left: 14px;
+  }
+
+  .phone-number {
+    width: 100%;
+    position: absolute;
+    top: 362px;
+    color: #FFFFFF;
+    white-space: nowrap;
+  }
+
+  .black-to-top {
+    width: 56px;
+    height: 24px;
+    background: url("../images/icon/arrows_2.png") no-repeat center #ce2308;
+    border-radius: 56px 56px 0 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+}
+
+/*弹窗*/
+.match-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .wrap {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    .modal {
+      width: 502px;
+      height: 402px;
+      //position: relative;
+      padding: 14px;
+      box-sizing: border-box;
+      .closeLog {
+        width: 28px;
+        height: 28px;
+        float: right;
+        cursor: pointer;
+      }
+      .listen {
+        width: 94%;
+        //height: 165px;
+        background: #FFFFFF;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 16px;
+        padding: 22px 15px 15px 15px;
+        box-sizing: border-box;
+        .listen-item {
+          padding: 0 18px;
+          box-sizing: border-box;
+          line-height: 40px;
+          border-radius: 6px;
+          outline: none;
+          border: none;
+          background: #e8e8e8;
+          text-align: left;
+          &:nth-of-type(1) {
+            margin-right: 10px;
+          }
+        }
+        .hint {
+          margin: 15px;
+          .icon {
+            width: 6px;
+            height: 6px;
+            background: url("../images/icon/star.png") no-repeat;
+            display: inline-block;
+          }
+          span {
+            font-size: 12px;
+            color: #444444;
+          }
+        }
+        .btn {
+          font-size: 18px;
+          //border: 1px solid #000;
+          .btn-item {
+            padding: 0 46px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 40px;
+            display: inline-block;
+            box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            &:first-child {
+              background: url("../images/icon/icon2.png");
+              border-top-left-radius: 20px;
+              border-bottom-left-radius: 20px;
+              outline: none;
+              border: none;
+              margin-top: -4px;
+              margin-right: -6px;
+            }
+            &:last-child {
+              background: url("../images/icon/icon3.png");
+              border-top-right-radius: 20px;
+              border-bottom-right-radius: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*试听名额*/
+.test {
+  display: none;
+  .modal {
+    background: url("../images/icon/popup_1.png") no-repeat;
+  }
+  .closeLog {
+    background: url("../images/icon/close_3.png") no-repeat;
+  }
+  .listen {
+    text-align: center;
+  }
+}
+
+/*报名申请*/
+.join {
+  display: none;
+  .modal {
+    background: url("../images/icon/popup_2.png") no-repeat;
+  }
+  .closeLog {
+    background: url("../images/icon/close_4.png") no-repeat;
+  }
+  .info {
+    .listen-item {
+      width: 48%;
+      padding: 0 18px;
+      box-sizing: border-box;
+      line-height: 40px;
+      border-radius: 6px;
+      &:nth-of-type(1) {
+        margin-right: 10px;
+      }
+    }
+  }
+  .submit {
+    width: 100%;
+    background: #ff5931;
+    line-height: 40px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 12px;
+  }
+  .check-item {
+    //margin-top: 25px;
+    color: #444444;
+    position: relative;
+    //border: 1px solid red;
+    margin-bottom: 20px;
+    .item-label {
+      line-height: 28px;
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 15px;
+      color: #777;
+      font-size: 16px;
+    }
+    .radio_type {
+      width: 11px;
+      height: 11px;
+      appearance: none;
+      position: relative;
+      margin-top: -14px;
+    }
+    .radio_type:before {
+      content: '';
+      width: 11px;
+      height: 11px;
+      border: 2px solid #a7a7a7;
+      display: inline-block;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    .radio_type:checked:before {
+      content: '';
+      width: 11px;
+      height: 11px;
+      border: 2px solid #3161d2;
+      display: inline-block;
+      border-radius: 50%;
+    }
+    .radio_type:checked:after {
+      content: '';
+      width: 6px;
+      height: 6px;
+      text-align: center;
+      background: #3161d2;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 5px;
+    }
+    .radio_type:checked + label {
+      color: #3161d2;
     }
   }
 }

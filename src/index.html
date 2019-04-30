@@ -6,12 +6,13 @@
   <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">
   <link rel="stylesheet" href="css/index.css">
 
-  <script src="https://img.thea.cn/public/js/jquery-2.2.3.min.js"></script>
+  <script src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
   <script src="js/index.js"></script>
 </head>
 <body>
 
-<div class="wrap">
+<div class="wrap defaults_dataid" data-id="2-0-30-0-0-0-1-深圳MBA研修">
   <header class="header">
     <div class="container clearfix">
       <a href="index.html" class="nuoda_logo"></a>
@@ -26,7 +27,7 @@
         <a href="javascript:void (0)" class="nav-item">
           学费咨询
         </a>
-        <a href="javascript:void (0)" class="nav-item">
+        <a href="javascript:void (0)" class="nav-item subscribe">
           预约试听
         </a>
       </nav>
@@ -41,26 +42,14 @@
 
   <div class="banner">
     <div class="container">
-      <div class="content">
-        <h1 class="banner-h1">
-          UWS 英国西苏格兰大学
-        </h1>
-        <p class="en-title">
-          Master of Business Administration Awarded By UWS
-          Part-time Top-up program in Shenzhen
-        </p>
-        <span class="mba">
-          MBA「招生简章」
-        </span>
-
-        <div class="btn">
-          <a href="javascript:void (0)" class="btn-item">
-            了解更多
-          </a>
-          <a href="javascript:void (0)" class="btn-item">
-            预约试听
-          </a>
-        </div>
+      <div class="btn">
+        <a href="javascript:void (0)" class="btn-item"
+           onclick="ECHAT.customNewWinChat()">
+          了解更多
+        </a>
+        <a href="javascript:void (0)" class="btn-item subscribe">
+          预约试听
+        </a>
       </div>
     </div>
   </div>
@@ -83,7 +72,7 @@
             大学拥有苏格兰最佳的教学设施，19世纪的历史建筑与现代教学楼宇相得益彰，
             现代化的图书馆、IT中心、学生俱乐部等为学生提供了一流的学习环境。
           </p>
-          <a href="javascript:void (0)" class="uws-btn">
+          <a href="javascript:void (0)" class="uws-btn" onclick="ECHAT.customNewWinChat()">
             <span>学校详情</span>
             <i class="icon"></i>
           </a>
@@ -97,8 +86,9 @@
             <p class="honor-title">
               苏格兰地区最大的大学之一
             </p>
-            <p class="text">
-              • 拥有一百多年历史的英国公立综合性大学，苏格兰地区最大的大学之一
+            <p class="text clearfix">
+              <i class="icon"></i>
+              <span>拥有一百多年历史的英国公立综合性大学，苏格兰地区最大的大学之一</span>
             </p>
           </div>
         </div>
@@ -109,8 +99,9 @@
               泰晤士世界高校排名前3%
             </p>
             <p class="text">
-              • 泰晤士世界高校排名前3%的一流大学，全球排名401-500，
-              全英排名48（泰晤士高等教育世界大学排名2019）
+              <i class="icon"></i>
+              <span>泰晤士世界高校排名前3%的一流大学，全球排名401-500，
+              全英排名48（泰晤士高等教育世界大学排名2019）</span>
             </p>
           </div>
         </div>
@@ -121,9 +112,10 @@
               国际优秀与世界领先
             </p>
             <p class="text">
-              • 权威的英国政府卓越研究框架评估（REF）评定为“国际优秀与世界领先”，
+              <i class="icon"></i>
+              <span>权威的英国政府卓越研究框架评估（REF）评定为“国际优秀与世界领先”，
               拥有工程和计算机学院、商企学院、教育学院、传媒、文化与社会学院、健康、护理和助产术学院，
-              颁授100多个学士、硕士和博士学位，在校学生1万7千多人
+              颁授100多个学士、硕士和博士学位，在校学生1万7千多人</span>
             </p>
           </div>
         </div>
@@ -134,9 +126,10 @@
               获得多项国际认证
             </p>
             <p class="text">
-              • 西苏格兰大学商学院是苏格兰成立最早的商学院之一，
+              <i class="icon"></i>
+              <span>西苏格兰大学商学院是苏格兰成立最早的商学院之一，
               学院在管理、会计和金融上有着国际性的声誉，
-              拥有ACCA、CIMA、CMI、CIPD等多项国际认证
+              拥有ACCA、CIMA、CMI、CIPD等多项国际认证</span>
             </p>
           </div>
         </div>
@@ -164,8 +157,9 @@
             国际学生可以在当地攻读, 完成课程及论文后将获发西苏格兰大学的学位，
             所获学位与在本校攻读相同。
             学员亦将获邀赴英参加毕业典礼并加入西苏格兰大学校友会
+
           </p>
-          <a href="javascript:void (0)" class="intro-btn">
+          <a href="javascript:void (0)" class="intro-btn subscribe">
             报名试听
           </a>
         </div>
@@ -173,30 +167,32 @@
       <!--课程-->
       <div class="classes">
         <div class="classes-content">
-          <div class="classes-row clearfix">
-            <i class="icon"></i>
-            <span>课程学制为18个月，每月一个周末集中授课</span>
-          </div>
-          <div class="classes-row clearfix">
-            <i class="icon"></i>
-            <span>
+          <div class="classes-ul">
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>课程学制为18个月，每月一个周末集中授课</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>
               LEB提供8个科目，每个科目15学分，共计120学分
             </span>
-          </div>
-          <div class="classes-row clearfix">
-            <i class="icon"></i>
-            <span>商业研究项目60学分</span>
-          </div>
-          <div class="classes-row clearfix">
-            <i class="icon"></i>
-            <span>商业计划+模拟项目报告</span>
-          </div>
-          <div class="classes-row clearfix">
-            <i class="icon"></i>
-            <span>英国西苏格兰大学，工商管理硕士学位</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>商业研究项目60学分</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>商业计划+模拟项目报告</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>英国西苏格兰大学，工商管理硕士学位</span>
+            </div>
           </div>
 
-          <a href="javascript:void (0)" class="intro-btn">
+          <a href="javascript:void (0)" class="intro-btn" onclick="ECHAT.customNewWinChat()">
             了解更多
           </a>
         </div>
@@ -211,11 +207,11 @@
             与西苏格兰大学合作在亚太地区开展西苏格兰MBA项目。
             课程含8个必修模块、2个选修模块及最后的商业研究项目，
             共180学分。其中，8个必修模块为120学分，完成120学分后，
-            学生将获发伦敦考试委员会颁发的Postgraduate Diploma In Business Administration证书；
+            学生将获发伦敦考试委员会颁发的Postgraduate Diploma In Business Administration证书；<br/>
             商业研究项目为60学分，学员将在导师的指导下完成商业研究项目。
             通过商业研究项目后，学员将获颁西苏格兰大学工商管理硕士学位
           </p>
-          <a href="javascript:void (0)" class="intro-btn">
+          <a href="javascript:void (0)" class="intro-btn subscribe">
             报名试听
           </a>
         </div>
@@ -225,7 +221,7 @@
 
   <!--课程设置-->
   <div class="curriculum">
-    <div class="container clearfix">
+    <div class="container">
       <div class="classes-set">
         <div class="intro-title">
           <p class="en">
@@ -246,7 +242,7 @@
         </p>
       </div>
       <!--模块-->
-      <div class="modules">
+      <div class="modules clearfix">
         <div class="module-item">
           <div class="item-title">
             必修模块
@@ -303,12 +299,13 @@
               <i class="icon"></i>
               <span>
               商业战略管理 Managing Business Strategy
-            </span>
+               </span>
             </div>
+
           </div>
 
 
-          <a href="javascript:void (0)" class="intro-btn">
+          <a href="javascript:void (0)" class="intro-btn" onclick="ECHAT.customNewWinChat()">
             了解更多
           </a>
           <p>
@@ -352,7 +349,7 @@
             </div>
           </div>
 
-          <a href="javascript:void (0)" class="intro-btn">
+          <a href="javascript:void (0)" class="intro-btn" onclick="ECHAT.customNewWinChat()">
             了解更多
           </a>
           <p>
@@ -379,14 +376,20 @@
               <span>
               模拟商业项目研究 Business Research Report
             </span>
+              <div class="classes-row clearfix">
+                <i class="icon"></i>
+                <span>
+              模拟商业项目研究 Business Research Report
+            </span>
+              </div>
             </div>
-          </div>
 
-          <a href="javascript:void (0)" class="intro-btn">
-            了解更多
-          </a>
-          <p>
-          </p>
+            <a href="javascript:void (0)" class="intro-btn" onclick="ECHAT.customNewWinChat()">
+              了解更多
+            </a>
+            <p>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -466,6 +469,7 @@
               </p>
             </div>
           </div>
+
         </div>
 
         <div class="manage-col">
@@ -532,16 +536,16 @@
             </div>
           </div>
         </div>
+
       </div>
       <!--预约-->
       <div class="appoint">
-        <from class="appoint-from">
-          <input type="text" class="from-item" placeholder="请输入您的姓名">
-          <input type="tel" class="from-item" placeholder="请输入您的联系方式"
-                 maxlength="11"
-          >
-          <input type="button" class="from-item" value="立即预约">
-        </from>
+        <form class="appoint-from sign-in">
+          <input type="text" class="from-item user-name" placeholder="请输入您的姓名">
+          <input type="tel" class="from-item user-tel" placeholder="请输入您的联系方式"
+                 maxlength="11">
+          <input type="submit" class="from-item" value="立即预约">
+        </form>
       </div>
     </div>
   </div>
@@ -590,10 +594,10 @@
       </div>
 
       <div class="btn">
-        <a href="javascript:void (0)" class="btn-item">
+        <a href="javascript:void (0)" class="btn-item" onclick="ECHAT.customNewWinChat()">
           了解更多
         </a>
-        <a href="javascript:void (0)" class="btn-item">
+        <a href="javascript:void (0)" class="btn-item subscribe">
           预约试听
         </a>
       </div>
@@ -602,13 +606,259 @@
 
   <!--如何申请-->
   <div class="apply">
-    <div class="container">
+    <div class="container clearfix">
       <div class="adv-title">
         <div class="en">HOW TO APPLY</div>
         <div class="cn">如何申请</div>
       </div>
+      <!--条件-->
+      <div class="condition">
+        <div class="condition-item">
+          <i class="num-icon">01</i>
+          <div class="text">
+            <p class="text-title">
+              申请资质
+            </p>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>本科毕业两年以上工作经验</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>专科毕业五年以上工作经验，最少一年管理经验</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>如没有以上相应学历学位，但其企业或个人在业内有广泛影响力的，
+                申请批准后并经过面试可进入该项目学习，但每班只限极少名额。</span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="condition-item">
+          <i class="num-icon">02</i>
+          <div class="text">
+            <p class="text-title">
+              申请材料
+            </p>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>申请表及自述文件</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>个人英文简历</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>英文推荐信1-2份（附名片）</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>最高学历证明（高清扫描件）</span>
+            </div>
+            <div class="classes-row clearfix">
+              <i class="icon"></i>
+              <span>身份证正反面或护照信息页（高清扫描件）</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--流程-->
+      <div class="process">
+        <i class="num-icon">03</i>
+        <p class="text-title">
+          申请流程
+        </p>
+
+        <div class="content clearfix">
+          <div class="process-item">
+            <i class="item-bg"></i>
+            <p class="item-title">递交资料</p>
+            <p class="text">
+              参照申请资质与文件清单准备申请材料递交深圳教学中心
+            </p>
+          </div>
+          <div class="process-item">
+            <i class="item-bg"></i>
+            <p class="item-title">审核面试</p>
+            <p class="text">
+              材料递交后，审核预计15个工作日；期间申请人可能被要求进行视频面试
+            </p>
+          </div>
+          <div class="process-item">
+            <i class="item-bg"></i>
+            <p class="item-title">接收offer</p>
+            <p class="text">
+              审核通过者将收到西苏格兰大学MBA offer letter
+            </p>
+          </div>
+          <div class="process-item">
+            <i class="item-bg"></i>
+            <p class="item-title">办理入学</p>
+            <p class="text">
+              学生至深圳教学中心办理入学手续，开通学习平台
+            </p>
+          </div>
+        </div>
+
+
+        <div class="btn clearfix">
+          <a href="javascript:void (0)" class="btn-item subscribe">
+            立即申请
+          </a>
+          <a href="javascript:void (0)" class="btn-item" onclick="ECHAT.customNewWinChat()">
+            了解更多
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-nav">
+        <a href="javascript:void (0)" class="nav-item">
+          关于我们
+        </a>
+        <a href="javascript:void (0)" class="nav-item">联系我们</a>
+        <a href="javascript:void (0)" class="nav-item">版权声明</a>
+        <a href="javascript:void (0)" class="nav-item">网站地图</a>
+        <a href="javascript:void (0)" class="nav-item">法律声明</a>
+      </div>
+      <address class="address">
+        版权所有 深圳市诺达教育股份有限公司
+        © www.thea.cn All Rights Reserved 粤ICP备10032899号
+      </address>
+    </div>
+  </footer>
+
+  <!--广告-->
+  <div class="ad">
+    <div class="container">
+      <form class="free-get sign-in">
+        <input type="tel" class="tel user-name" placeholder="请输入您的姓名"/>
+        <input type="tel" class="tel user-tel" placeholder="请输入您的联系方式" maxlength="11"/>
+        <input type="submit" class="get-result" value="预约试听课程">
+        <i class="close"></i>
+      </form>
+    </div>
+  </div>
+
+  <!--右侧导航-->
+  <div class="right-nav">
+    <i class="close"></i>
+    <nav class="nav">
+      <a href="javascript:void(0);" class="nav-item"
+       onclick="ECHAT.customNewWinChat()">学历要求</a><br/>
+      <a href="javascript:void(0);" class="nav-item"
+       onclick="ECHAT.customNewWinChat()">报读条件</a><br/>
+      <a href="javascript:void(0);" class="nav-item"
+       onclick="ECHAT.customNewWinChat()">学费咨询</a><br/>
+      <a href="javascript:void(0);" class="nav-item"
+       onclick="ECHAT.customNewWinChat()">证书类型</a><br/>
+      <a href="javascript:void(0);" class="nav-item"
+       onclick="ECHAT.customNewWinChat()">证书认证</a><br/>
+      <a href="javascript:void(0);" class="nav-item"
+       onclick="ECHAT.customNewWinChat()">校区咨询</a>
+    </nav>
+
+    <a href="javascript:void (0)" class="online-consult subscribe">预约试听</a>
+
+    <i class="wechart"></i>
+
+    <p class="phone-number">17722510186</p>
+
+    <a href="javascript:void(0);" class="black-to-top"></a>
+  </div>
+
+  <!--试听名额-->
+  <div class="match-mask test">
+    <div class="mask"></div>
+    <div class="wrap">
+      <div class="modal">
+        <i class="closeLog"></i>
+
+        <form class="listen">
+          <input type="text" class="listen-item" placeholder="请输入您的姓名">
+          <input type="text" class="listen-item"
+                 placeholder="请输入您的联系方式" maxlength="11">
+          <div class="hint">
+            <i class="icon"></i>
+            <span>提交信息后，课程顾问将在24小时内与您联系，请保持电话畅通</span>
+          </div>
+          <div class="btn">
+            <input type="button" class="btn-item" value="预约试听">
+            <a href="javascript:void (0)" class="btn-item" onclick="ECHAT.customNewWinChat()">
+              了解详情
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--报名申请-->
+  <div class="match-mask join">
+    <div class="mask"></div>
+    <div class="wrap">
+      <div class="modal">
+        <i class="closeLog"></i>
+
+        <form class="listen sign-in">
+          <div class="check-item">
+            <input class="radio_type" type="radio" value="预约试听"
+                   name="type" id="radio1" checked="checked"/>
+            <label class="item-label" for="radio1">预约试听</label>
+
+            <input class="radio_type" type="radio" value="报名申请"
+                   name="type" id="radio2"/>
+            <label class="item-label" for="radio2">报名申请</label>
+            <!--radio选择的结果-->
+            <input type="hidden" class="user-apply user-con">
+          </div>
+
+          <div class="info">
+            <input type="text" class="listen-item user-name" placeholder="请输入您的姓名">
+            <input type="text" class="listen-item user-tel"
+                   placeholder="请输入您的联系方式" maxlength="11">
+          </div>
+
+          <input type="submit" class="submit" value="提交信息">
+
+          <div class="hint">
+            <i class="icon"></i>
+            <span>提交信息后，课程顾问将在24小时内与您联系，请保持电话畅通</span>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
 </body>
+
+<script type="text/javascript">
+  var _echatServer = ['v.rainbowred.com'];
+  window._echat = window._echat || function () {
+    (_echat.q = _echat.q || []).push(arguments)
+  };
+  _echat.l = +new Date;
+  _echat('initParam', {companyId: 378});
+  _echat('initParam', {echatTag: '北京素质教育'});
+  (function () {
+    var echat = document.createElement('script');
+    echat.type = 'text/javascript';
+    echat.async = true;
+    echat.id = 'echatmodulejs';
+    echat.setAttribute('charset', 'UTF-8');
+    echat.src = (
+            'https:' == document.location.protocol ? 'https://' : 'http://')
+        + 'vs.rainbowred.com/visitor/echat.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(echat, s);
+  })();
+</script>
+
 </html>
