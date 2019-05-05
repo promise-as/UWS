@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title>UWS 英国西苏格兰大学</title>
   <link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/norda_uws.css">
 
   <script src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
   <script type="text/javascript" src="https://img.thea.cn/public/js/thea.ms.form.js"></script>
-  <script src="js/index.js"></script>
+  <script src="js/norda_uws.js"></script>
 </head>
 <body>
 
@@ -72,10 +72,7 @@
             大学拥有苏格兰最佳的教学设施，19世纪的历史建筑与现代教学楼宇相得益彰，
             现代化的图书馆、IT中心、学生俱乐部等为学生提供了一流的学习环境。
           </p>
-          <a href="javascript:void (0)" class="uws-btn" onclick="ECHAT.customNewWinChat()">
-            <span>学校详情</span>
-            <i class="icon"></i>
-          </a>
+          <a href="javascript:void (0)" class="uws-btn" onclick="ECHAT.customNewWinChat()"></a>
         </div>
       </div>
       <!--荣誉-->
@@ -400,11 +397,11 @@
     <div class="container">
       <!--管理-->
       <div class="manage clearfix">
-        <div class="manage-head">
-          <span>
-            模块简介
-          </span>
-        </div>
+        <!--<div class="manage-head">-->
+          <!--<span>-->
+            <!--模块简介-->
+          <!--</span>-->
+        <!--</div>-->
         <div class="manage-col">
           <div class="col-item">
             <div class="item-title clearfix">
@@ -735,16 +732,17 @@
   </footer>
 
   <!--广告-->
-  <div class="ad">
+  <div class="ad xl-bottom">
     <div class="container">
       <form class="free-get sign-in">
         <input type="tel" class="tel user-name" placeholder="请输入您的姓名"/>
         <input type="tel" class="tel user-tel" placeholder="请输入您的联系方式" maxlength="11"/>
         <input type="submit" class="get-result" value="预约试听课程">
-        <i class="close"></i>
+        <i class="close xl-close"></i>
       </form>
     </div>
   </div>
+  <div class="bottom-cleardiv"></div>
 
   <!--右侧导航-->
   <div class="right-nav">
@@ -768,7 +766,7 @@
 
     <i class="wechart"></i>
 
-    <p class="phone-number">17722510186</p>
+    <p class="phone-number">18988787129</p>
 
     <a href="javascript:void(0);" class="black-to-top"></a>
   </div>
@@ -780,16 +778,16 @@
       <div class="modal">
         <i class="closeLog"></i>
 
-        <form class="listen">
-          <input type="text" class="listen-item" placeholder="请输入您的姓名">
-          <input type="text" class="listen-item"
+        <form class="listen sign-in">
+          <input type="text" class="listen-item user-name" placeholder="请输入您的姓名">
+          <input type="text" class="listen-item user-tel"
                  placeholder="请输入您的联系方式" maxlength="11">
           <div class="hint">
             <i class="icon"></i>
             <span>提交信息后，课程顾问将在24小时内与您联系，请保持电话畅通</span>
           </div>
           <div class="btn">
-            <input type="button" class="btn-item" value="预约试听">
+            <input type="submit" class="btn-item" value="预约试听">
             <a href="javascript:void (0)" class="btn-item" onclick="ECHAT.customNewWinChat()">
               了解详情
             </a>
@@ -846,7 +844,7 @@
   };
   _echat.l = +new Date;
   _echat('initParam', {companyId: 378});
-  _echat('initParam', {echatTag: '北京素质教育'});
+  _echat('initParam', {echatTag: '竞价-深圳MBA研修'});
   (function () {
     var echat = document.createElement('script');
     echat.type = 'text/javascript';

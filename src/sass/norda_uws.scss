@@ -65,7 +65,7 @@ a, i {
 .banner {
   width: 100%;
   height: 428px;
-  background: url("../images/bg/banner.png") no-repeat;
+  background: url("../images/bg/banner.png") no-repeat center;
   padding: 90px 0;
   box-sizing: border-box;
   text-align: center;
@@ -74,8 +74,10 @@ a, i {
     font-size: 18px;
     margin-top: 214px;
     .btn-item {
-      padding: 0 72px;
-      box-sizing: border-box;
+      width: 162px;
+      height: 43px;
+      //padding: 0 72px;
+      //box-sizing: border-box;
       color: #FFFFFF;
       text-align: center;
       border-radius: 5px;
@@ -85,7 +87,10 @@ a, i {
       text-indent: -9999px;
       &:nth-of-type(2) {
         margin-left: 30px;
-        margin-right: -20px;
+        margin-right: 2px;
+      }
+      &:hover{
+        //transform: scale(1.1);
       }
     }
   }
@@ -138,21 +143,14 @@ a, i {
         text-align: left;
       }
       .uws-btn {
-        padding: 0 14px;
-        box-sizing: border-box;
-        background: url("../images/icon/icon2.png");
-        font-size: 18px;
-        color: #FFFFFF;
-        line-height: 36px;
+        //border: 1px solid #000;
+        width: 132px;
+        height: 50px;
+        background: url("../images/icon/school_detail.png") no-repeat;
         display: inline-block;
-        span {
-          display: inline-block;
-        }
-        .icon {
-          width: 18px;
-          height: 14px;
-          background: url("../images/icon/arrows.png") no-repeat;
-          display: inline-block;
+        text-align: center;
+        &:hover{
+          transform: scale(1.05);
         }
       }
     }
@@ -394,6 +392,7 @@ a, i {
         line-height: 32px;
         display: inline-block;
         margin-top: 10px;
+        font-size: 14px;
         &:hover {
           background: #ff714b;
           color: #FFFFFF;
@@ -539,14 +538,19 @@ a, i {
 
 /*模块简介*/
 .module-intro {
-  margin-top: 25px;
-  background: url("../images/bg/bg6.png") no-repeat;
+  width: 100%;
+  //height: 930px;
+  //margin-top: 25px;
+  background: url("../images/bg/module_intro.png") no-repeat center;
   background-position-y: 57px;
   /*管理*/
   .manage {
     //border: 1px solid #000;
-    background: url("../images/bg/bg7.png") no-repeat center;
+    //background: url("../images/bg/bg7.png") no-repeat center;
     .manage-head {
+      border: 1px solid #000;
+      padding-left: 26px;
+      box-sizing: border-box;
       span {
         display: inline-block;
         font-size: 30px;
@@ -565,10 +569,9 @@ a, i {
       //height: 710px;
       //border: 1px solid #cccccc;
       float: left;
-      margin-top: 57px;
+      margin-top: 120px;
       padding: 34px 28px;
       box-sizing: border-box;
-
       .col-item {
         //border: 1px solid #000;
         margin-bottom: 50px;
@@ -692,31 +695,38 @@ a, i {
   /*预约*/
   .appoint {
     width: 1200px;
-    height: 160px;
-    background: url("../images/bg/bg8.png") no-repeat;
+    height: 168px;
+    margin-top: -8px;
+    //background: url("../images/bg/bg8.png") no-repeat;
     padding: 55px 45px;
     box-sizing: border-box;
+    //border: 1px solid red;
     .appoint-from {
       float: right;
+      //border: 1px solid #cccccc;
       .from-item {
+        //border: 1px solid #000;
         line-height: 54px;
-        padding: 0 24px;
+        padding: 0 72px 0 20px;
         box-sizing: border-box;
         outline: none;
         border: none;
-        margin-left: 28px;
+        margin-left: 20px;
         font-size: 16px;
         border-radius: 6px;
+        background: transparent;
         &::placeholder {
           color: #888888;
         }
         &:last-child {
-          padding: 0 80px;
+          padding: 0 120px;
           box-sizing: border-box;
           font-size: 20px;
           color: #FFFFFF;
           font-weight: bold;
-          background: url("../images/icon/icon2.png");
+          //background: url("../images/icon/icon2.png");
+
+          text-indent: -9999px;
           cursor: pointer;
         }
       }
@@ -796,19 +806,22 @@ a, i {
   .btn {
     font-size: 18px;
     margin-top: 30px;
+    //border: 1px solid #cccccc;
     .btn-item {
-      padding: 0 46px;
-      box-sizing: border-box;
+      width: 166px;
+      height: 58px;
       color: #FFFFFF;
-      background: url("../images/icon/icon2.png");
+      background: url("../images/icon/btn_1.png") no-repeat;
       text-align: center;
       border-radius: 5px;
-      line-height: 43px;
       display: inline-block;
-      box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2);
+      text-indent: -9999px;
       &:nth-of-type(2) {
-        background: url("../images/icon/icon3.png");
+        background: url("../images/icon/btn_2.png") no-repeat;
         margin-left: 30px;
+      }
+      &:hover{
+        transform: scale(1.05);
       }
     }
   }
@@ -819,6 +832,7 @@ a, i {
   margin-top: 50px;
   background: url("../images/bg/bg9.png") no-repeat center right;
   background-position-y: 42px;
+
   .adv-title {
     color: #2c56bd;
     margin-bottom: 34px;
@@ -1019,6 +1033,8 @@ a, i {
   box-sizing: border-box;
   text-align: center;
   line-height: 16px;
+
+  //margin-bottom: 99px;
   .footer-nav {
     .nav-item {
       display: inline-block;
@@ -1039,8 +1055,12 @@ a, i {
 
 /*广告*/
 .ad {
+  display: none;
+  width: 100%;
   background: url("../images/bg/ad_1.png") no-repeat;
   //border: 1px solid #000;
+  position: fixed;
+  bottom: 0;
   .container {
     height: 99px;
     background: url("../images/bg/ad_2.png") no-repeat;
@@ -1089,6 +1109,11 @@ a, i {
 
   }
 }
+/*当有广告的时候显示*/
+.bottom-cleardiv{
+  display: none;
+  height: 99px;
+}
 
 /*右侧导航*/
 .right-nav {
@@ -1102,7 +1127,7 @@ a, i {
   background: #df4839;
   font-size: 14px;
   text-align: center;
-  background: url("../images/icon/icon2.png");
+  background: url("../images/icon/right_nav.png") no-repeat;
   .close {
     width: 8px;
     height: 8px;
@@ -1117,12 +1142,12 @@ a, i {
     width: 100%;
     //height: 140px;
     position: absolute;
-    top: 20px;
+    top: 12px;
     //border: 1px solid #000;
     .nav-item {
       color: #FFFFFF;
-      border-bottom: 1px solid #c83819;
-      line-height: 30px;
+      //border-bottom: 1px solid #c83819;
+      line-height: 33px;
       display: inline;
       padding: 6px;
       box-sizing: border-box;
@@ -1147,7 +1172,8 @@ a, i {
   .wechart {
     width: 99px;
     height: 99px;
-    background: url("../images/icon/wechart.png") no-repeat;
+    background: url("../images/icon/wechart.jpg") no-repeat center;
+    background-size: contain;
     position: absolute;
     top: 254px;
     left: 14px;
@@ -1380,4 +1406,8 @@ a, i {
       color: #3161d2;
     }
   }
+}
+
+#ECHAT_invite, .allimg{
+  display: none!important;
 }

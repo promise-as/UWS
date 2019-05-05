@@ -75,7 +75,7 @@ a, i {
 .banner {
   width: 100%;
   height: 428px;
-  background: url("../images/bg/banner.png") no-repeat;
+  background: url("../images/bg/banner.png") no-repeat center;
   padding: 90px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -89,9 +89,8 @@ a, i {
 }
 
 .banner .btn .btn-item {
-  padding: 0 72px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 162px;
+  height: 43px;
   color: #FFFFFF;
   text-align: center;
   border-radius: 5px;
@@ -102,7 +101,7 @@ a, i {
 
 .banner .btn .btn-item:nth-of-type(2) {
   margin-left: 30px;
-  margin-right: -20px;
+  margin-right: 2px;
 }
 
 /*英国西苏格兰大学*/
@@ -168,25 +167,16 @@ a, i {
 }
 
 .uws .uws-detail .uws-head .uws-btn {
-  padding: 0 14px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background: url("../images/icon/icon2.png");
-  font-size: 18px;
-  color: #FFFFFF;
-  line-height: 36px;
+  width: 132px;
+  height: 50px;
+  background: url("../images/icon/school_detail.png") no-repeat;
   display: inline-block;
+  text-align: center;
 }
 
-.uws .uws-detail .uws-head .uws-btn span {
-  display: inline-block;
-}
-
-.uws .uws-detail .uws-head .uws-btn .icon {
-  width: 18px;
-  height: 14px;
-  background: url("../images/icon/arrows.png") no-repeat;
-  display: inline-block;
+.uws .uws-detail .uws-head .uws-btn:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .uws .honor {
@@ -455,6 +445,7 @@ a, i {
   line-height: 32px;
   display: inline-block;
   margin-top: 10px;
+  font-size: 14px;
 }
 
 .project .leb .leb-detail .intro-btn:hover {
@@ -612,15 +603,18 @@ a, i {
 
 /*模块简介*/
 .module-intro {
-  margin-top: 25px;
-  background: url("../images/bg/bg6.png") no-repeat;
+  width: 100%;
+  background: url("../images/bg/module_intro.png") no-repeat center;
   background-position-y: 57px;
   /*管理*/
   /*预约*/
 }
 
-.module-intro .manage {
-  background: url("../images/bg/bg7.png") no-repeat center;
+.module-intro .manage .manage-head {
+  border: 1px solid #000;
+  padding-left: 26px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .module-intro .manage .manage-head span {
@@ -640,7 +634,7 @@ a, i {
 .module-intro .manage .manage-col {
   width: 448px;
   float: left;
-  margin-top: 57px;
+  margin-top: 120px;
   padding: 34px 28px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -745,8 +739,8 @@ a, i {
 
 .module-intro .appoint {
   width: 1200px;
-  height: 160px;
-  background: url("../images/bg/bg8.png") no-repeat;
+  height: 168px;
+  margin-top: -8px;
   padding: 55px 45px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -758,14 +752,15 @@ a, i {
 
 .module-intro .appoint .appoint-from .from-item {
   line-height: 54px;
-  padding: 0 24px;
+  padding: 0 72px 0 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
   border: none;
-  margin-left: 28px;
+  margin-left: 20px;
   font-size: 16px;
   border-radius: 6px;
+  background: transparent;
 }
 
 .module-intro .appoint .appoint-from .from-item::-webkit-input-placeholder {
@@ -789,13 +784,13 @@ a, i {
 }
 
 .module-intro .appoint .appoint-from .from-item:last-child {
-  padding: 0 80px;
+  padding: 0 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 20px;
   color: #FFFFFF;
   font-weight: bold;
-  background: url("../images/icon/icon2.png");
+  text-indent: -9999px;
   cursor: pointer;
 }
 
@@ -881,22 +876,24 @@ a, i {
 }
 
 .pro-advantage .btn .btn-item {
-  padding: 0 46px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  width: 166px;
+  height: 58px;
   color: #FFFFFF;
-  background: url("../images/icon/icon2.png");
+  background: url("../images/icon/btn_1.png") no-repeat;
   text-align: center;
   border-radius: 5px;
-  line-height: 43px;
   display: inline-block;
-  -webkit-box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.2);
+  text-indent: -9999px;
 }
 
 .pro-advantage .btn .btn-item:nth-of-type(2) {
-  background: url("../images/icon/icon3.png");
+  background: url("../images/icon/btn_2.png") no-repeat;
   margin-left: 30px;
+}
+
+.pro-advantage .btn .btn-item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 /*如何申请*/
@@ -1141,7 +1138,11 @@ a, i {
 
 /*广告*/
 .ad {
+  display: none;
+  width: 100%;
   background: url("../images/bg/ad_1.png") no-repeat;
+  position: fixed;
+  bottom: 0;
 }
 
 .ad .container {
@@ -1213,6 +1214,12 @@ a, i {
   cursor: pointer;
 }
 
+/*当有广告的时候显示*/
+.bottom-cleardiv {
+  display: none;
+  height: 99px;
+}
+
 /*右侧导航*/
 .right-nav {
   width: 124px;
@@ -1224,7 +1231,7 @@ a, i {
   background: #df4839;
   font-size: 14px;
   text-align: center;
-  background: url("../images/icon/icon2.png");
+  background: url("../images/icon/right_nav.png") no-repeat;
 }
 
 .right-nav .close {
@@ -1240,13 +1247,12 @@ a, i {
 .right-nav .nav {
   width: 100%;
   position: absolute;
-  top: 20px;
+  top: 12px;
 }
 
 .right-nav .nav .nav-item {
   color: #FFFFFF;
-  border-bottom: 1px solid #c83819;
-  line-height: 30px;
+  line-height: 33px;
   display: inline;
   padding: 6px;
   -webkit-box-sizing: border-box;
@@ -1272,7 +1278,8 @@ a, i {
 .right-nav .wechart {
   width: 99px;
   height: 99px;
-  background: url("../images/icon/wechart.png") no-repeat;
+  background: url("../images/icon/wechart.jpg") no-repeat center;
+  background-size: contain;
   position: absolute;
   top: 254px;
   left: 14px;
@@ -1535,4 +1542,8 @@ a, i {
 
 .join .check-item .radio_type:checked + label {
   color: #3161d2;
+}
+
+#ECHAT_invite, .allimg {
+  display: none !important;
 }

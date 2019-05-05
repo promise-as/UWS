@@ -17,7 +17,7 @@ $(function () {
   hide($(".right-nav .close"), $(".right-nav"));
 
   // 关闭广告
-  hide($(".ad .close"), $(".ad"));
+  // hide($(".ad .close"), $(".ad"));
 
   // 关闭弹窗1
   hide($(".test .closeLog"), $(".test"));
@@ -32,10 +32,13 @@ $(function () {
     $(this).parents('.check-item').find('.user-apply').val($(this).val());
   });
 
-  // 回到顶部
-  $(".black-to-top").click(function () {
-    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  //回到顶部
+  $('.black-to-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    });
   });
+
 
   // 预约试听 弹窗显示
   $(".subscribe").click(function () {
@@ -50,8 +53,37 @@ $(function () {
     }
   });
 
-  // 15秒
-  setInterval(function () {
-    $(".ad").css("display", "display");
-  }, 15000);
+
+
+  //pc底部的弹窗
+  if ($('.xl-bottom').size() > 0) {
+    midtc('.xl-bottom', '.xl-close', 8000, 30000, 3, '.bottom-cleardiv');
+  }
+  if ($(".test").size() > 0) {
+    midtc('.test', '.test .closeLog', 15000, 30000, 100, '.test');
+  }
+
+  function midtc(ele, c, f, a, n, s) {
+    var $par = $(ele);
+    var $cleardiv = $(s);
+    var $num = 0;
+    popupTc(f);
+    $(c, $par).click(function () {
+      $cleardiv.hide();
+      $par.hide();
+
+      $num++;
+
+      if ($num <= n) {
+        popupTc(a);
+      }
+    });
+
+    function popupTc(d) {
+      setTimeout(function () {
+        $cleardiv.show();
+        $par.fadeIn(300);
+      }, d);
+    }
+  }
 });
